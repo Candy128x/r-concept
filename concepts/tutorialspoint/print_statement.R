@@ -43,6 +43,20 @@ cat("\n after deleting a2 =")
 print(ls())
 
 
+cat("\n\n String Manipulation \n")
+
+a <- 'Apple'
+b <- 'banana'
+c <- 'chikoo'
+print(paste(a,b,c))
+print(paste(a,b,c, sep="-"))
+print(paste(a,b,c, sep="", collapse=""))
+
+cat("\n toupper(a) =", toupper(a))
+cat("\n tolower(a) =", tolower(a))
+cat("\n nchar(a) =", nchar(a))
+cat("\n substring(a) =", substring(a, 2, 4))
+
 writeLines("")
 
 # `#` for single line comment
@@ -53,12 +67,45 @@ if(FALSE) {
 	-> Execute by: Rscript print_statement.R
 	OutPut:
 	ashish@ashish-Vostro-3478:.../tutorialspoint$ Rscript print_statement.R 
-	[1] "Hello World :]"
-	[1] "Name = Er. Ashish Engineer"
+[1] "Hello World :]"
+[1] "Name = Er. Ashish Engineer"
 
-	New Line Demo
-	Apple is Good.
-	As said by Doctor :]
+
+New Line Demo
+Apple is Good.
+As said by Doctor :]
+
+New Line Demo
+Apple is Good.
+As said by Doctor :]
+
+
+
+ Variable Assignment OutPut:
+ a1 = 23
+ a2 = 34
+ a3 = 53
+ Finding Variables =[1] "a1"       "a2"       "a3"       "b1"       "b2"       "myString"
+[1] "a1" "a2" "a3"
+
+ all name variables =[1] ".secret_code" "a1"           "a2"           "a3"           "b1"          
+[6] "b2"           "myString"    
+
+ Deleting Variables
+ befor deleting a2 =[1] "a1"       "a2"       "a3"       "b1"       "b2"       "myString"
+
+ after deleting a2 =[1] "a1"       "a3"       "b1"       "b2"       "myString"
+
+
+ String Manipulation 
+[1] "Apple banana chikoo"
+[1] "Apple-banana-chikoo"
+[1] "Applebananachikoo"
+
+ toupper(a) = APPLE
+ tolower(a) = apple
+ nchar(a) = 5
+ substring(a) = ppl
 
 
 	-> File Naming Convention:

@@ -69,6 +69,24 @@ fruit <- c('apple', 'chikoo', 'banana', 'dragon fruit', 'elderberry')
 cat("\n fruit =", fruit)
 cat("\n fruit -> class =", class(fruit) )
 
+cat("\n seq(number_bucket) =", seq(number_bucket) )
+cat("\n seq(5, 9, by =0.2) =", seq(5, 9, by = 0.2) )
+
+cat("\n Accessing Vector Elements")
+# Accessing vector elements using position.
+t <- c("Sun","Mon","Tue","Wed","Thurs","Fri","Sat")
+u <- t[c(2,3,6)]
+print(u)
+# Accessing vector elements using logical indexing.
+v <- t[c(TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE)]
+print(v)
+# Accessing vector elements using negative indexing.
+x <- t[c(-2,-5)]
+print(x)
+# Accessing vector elements using 0/1 indexing.
+y <- t[c(0,0,0,0,0,0,1)]
+print(y)
+
 
 # Factor
 # Factors are the r-objects which are created using a vector. 
