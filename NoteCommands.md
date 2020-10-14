@@ -22,3 +22,4 @@
 - hit bellow commands in terminal
 - => R
 - => install.packages("RMySQL")
+- => install.packages("dplyr")
