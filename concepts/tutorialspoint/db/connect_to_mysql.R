@@ -29,7 +29,10 @@ dbListTables(db_conn)
 # Fetch the Tables Record
 result_a2 = dbSendQuery(db_conn, "SELECT * FROM employees;")
 result_a3 = fetch(result_a2, n = 5)
+cat("\n\n ---result_a3--- \n")
 print(result_a3)
+cat("\n\n ---result_a3---nrow--- \n")
+print(nrow(result_a3))
 dbClearResult(dbListResults(db_conn)[[1]])
 
 
